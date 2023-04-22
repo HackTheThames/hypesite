@@ -5,7 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta property="og:title" content="Something is coming - Hack The Thames" />
-		<meta name="twitter:title" content="Something is coming - Hack The Thames" />
+		<meta
+			name="twitter:title"
+			content="Something is coming - Hack The Thames"
+		/>
 		<meta name="og:url" content="https://hackthethames.uk" />
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="Hack The Thames" />
@@ -21,17 +24,11 @@
 			name="twitter:description"
 			content="Something's in the making. Let's keep in touch about it"
 		/>
-		<meta
-			property="og:image"
-			content="https://hackthethames.uk/img/og.webp"
-		/>
+		<meta property="og:image" content="https://hackthethames.uk/img/og.webp" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta
-			name="twitter:image"
-			content="https://hackthethames.uk/img/og.webp"
-		/>
-		<meta name="msapplication-TileColor" content="#010101" />
-		<meta name="theme-color" content="#010101" />
+		<meta name="twitter:image" content="https://hackthethames.uk/img/og.webp" />
+		<meta name="msapplication-TileColor" content="#040716" />
+		<meta name="theme-color" content="#040716" />
 
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="styles.css" />
@@ -50,21 +47,51 @@
 				</h1>
 				<br />
 				<br />
-				<p>Some time December 2024. Let's keep in touch about it</p>
-				<br />
-				<br />
-				<a href="https://tally.so/r/mZ8k9y">Pre Register Here!</a>
+				<p>Some time December 2023. Let's keep in touch about it</p>
+				<iframe
+					data-tally-src="https://tally.so/embed/mZ8k9y?alignLeft=1&transparentBackground=1&dynamicHeight=1"
+					loading="lazy"
+					width="650px"
+					height="522px"
+					frameborder="0"
+					marginheight="0"
+					marginwidth="0"
+					title="HackTheThames interest form"
+				></iframe>
+				<script>
+					var d = document,
+						w = "https://tally.so/widgets/embed.js",
+						v = function () {
+							"undefined" != typeof Tally
+								? Tally.loadEmbeds()
+								: d
+										.querySelectorAll("iframe[data-tally-src]:not([src])")
+										.forEach(function (e) {
+											e.src = e.dataset.tallySrc;
+										});
+						};
+					if ("undefined" != typeof Tally) v();
+					else if (d.querySelector('script[src="' + w + '"]') == null) {
+						var s = d.createElement("script");
+						(s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s);
+					}
+				</script>
 				<br />
 				<br />
 				<span
-					>Sponsors?
+					>Interested in sponsoring?
 					<a href="mailto:sponsors@hackthethames.uk">We're all ears</a></span
 				>
 				<br />
 				<br />
-				<p>
-					Hack the Thames is fiscally sponsored by Hack Club Bank, a project by The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499).
-				</p>
+				<footer>
+					<a href="https://bank.hackclub.com/hack-the-thames?ref=hypesite"
+						>Hack the Thames</a
+					>
+					is fiscally sponsored by Hack Club Bank, a project by The Hack
+					Foundation (d.b.a. Hack Club), a United States 501(c)(3) nonprofit
+					(EIN: 81-2908499).
+				</footer>
 			</div>
 		</div>
 	</body>
